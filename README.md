@@ -9,7 +9,7 @@ classDiagram
       class Chains_and_Wallets_to_test {
         <<Config>>
       }
-      class Config_ChainInfo {
+      class ChainInfo {
         <<Config>>
       }
 ```
