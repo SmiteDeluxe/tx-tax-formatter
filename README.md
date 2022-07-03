@@ -5,7 +5,7 @@ classDiagram
       TxProcessor <|-- WalletMainService
       OutputWriter <|-- WalletMainService
       Chains_and_Wallets_to_test <|-- WalletMainController
-      Config_ChainInfo <|-- WalletMainController
+      ChainInfo <|-- WalletMainController
       class Chains_and_Wallets_to_test {
         <<Config>>
       }
