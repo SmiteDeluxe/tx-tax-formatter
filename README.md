@@ -5,11 +5,11 @@ classDiagram
       TxProcessor <|-- WalletMainService
       OutputWriter <|-- WalletMainService
       Chains_and_Wallets_to_test <|-- WalletMainController
-      ChainInfo <|-- WalletMainController
+      ChainsInfo <|-- WalletMainController
       class Chains_and_Wallets_to_test {
         <<Config>>
       }
-      class ChainInfo {
+      class ChainsInfo {
         <<Config>>
       }
 ```
