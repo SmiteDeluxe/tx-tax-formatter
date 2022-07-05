@@ -1,0 +1,8 @@
+{
+  "chains": [{
+    "chain": "Polygon",
+    "api_base_url": "https://api.polygonscan.com",
+    "currency": "Matic",
+    "decimals": 18
+  }]
+}
