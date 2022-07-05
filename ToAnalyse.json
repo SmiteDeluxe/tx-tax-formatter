@@ -2,5 +2,8 @@
   "wallets": [{
     "addr": "0x4298272c3fc13f951d72a2a1ded8123e031bd04b",
     "chain": "Polygon"
+  },{
+    "addr": "0x4298272c3fc13f951d72a2a1ded8123e031bd04b",
+    "chain": "Ethereum"
   }]
 }

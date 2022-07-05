@@ -13,3 +13,4 @@ class WalletAPIServiceScan:
 
     def formatForWallet(self, wallet: str, chain: Chain):
         txs: List[Tx] = self.tx_getter.getTxs(wallet, chain)
+        print([x.__str__() for x in txs])

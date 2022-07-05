@@ -18,7 +18,7 @@ class TxGetterScan(TxGetter):
         resp_json: Dict = requests.get(
             chain.api_base_url + "/api?module=account&action=tokentx&address"
                                  "=0x4298272C3Fc13F951D72a2A1dED8123e031BD04b&page=1&offset=1000&startblock=0&endblock=99999999&sort=desc"
-                                 "&apikey=H653P3GCTS2KBATSK2HZC9Q5V3JPBPRMHM").json()
+                                 "&apikey=" + chain.api_key).json()
         result: Dict = resp_json['result']
 
         tx_list: List[Tx] = []

@@ -2,7 +2,14 @@
   "chains": [{
     "chain": "Polygon",
     "api_base_url": "https://api.polygonscan.com",
+    "api_key": "H653P3GCTS2KBATSK2HZC9Q5V3JPBPRMHM",
     "currency": "Matic",
+    "decimals": 18
+  },{
+    "chain": "Ethereum",
+    "api_base_url": "https://api.etherscan.io/",
+    "api_key": "39XBS4EZU41KR2CVAWPJ4VHIGZ9EENVUN4",
+    "currency": "Eth",
     "decimals": 18
   }]
 }

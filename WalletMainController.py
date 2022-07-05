@@ -18,6 +18,6 @@ if __name__ == '__main__':
             raise Exception("Chain " + wallet['chain'] + " not found in ChainData.json")
 
         chain_obj = Chain(needed_chain_data['chain'], needed_chain_data['api_base_url'], needed_chain_data['currency'],
-                          needed_chain_data['decimals'])
+                          needed_chain_data['decimals'], needed_chain_data['api_key'])
 
         wallet_api_service_scan.formatForWallet(wallet_add, chain_obj)
