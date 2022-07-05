@@ -1,15 +1,17 @@
 ```mermaid
+%%{init: {'theme': 'forest'} }%%
 classDiagram
-      WalletMainService <|-- WalletMainController
-      WalletAPIService <|-- WalletMainService
-      TxProcessor <|-- WalletMainService
-      OutputWriter <|-- WalletMainService
-      Chains_and_Wallets_to_test <|-- WalletMainController
-      ChainsInfo <|-- WalletMainController
-      class Chains_and_Wallets_to_test {
+      OutputWriter --o WalletMainService
+      WalletMainService --o WalletMainController
+      WalletAPIService --o WalletMainService
+      TxGetter --o WalletMainService
+      TxGetter <|-- TxGetterScan
+      ToAnalyse -- WalletMainController
+      ChainData -- WalletMainController
+      class ToAnalyse {
         <<Config>>
       }
-      class ChainsInfo {
+      class ChainData {
         <<Config>>
       }
 ```
